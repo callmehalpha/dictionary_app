@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background: #f3f3f3;
+}
+.navbar-nav li a {
+    color: #000 !important;
+}
+
+.link-md {
+    font-size: 14px;
+    color: #767676 !important;
+    font-weight: 600;
+}
+.link-sm {
+    font-size: 12px;
+}
+.nav-item {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.user a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.divide-line {
+    margin-top: 3px;
+    color: #767676;
+}
+.nav-item .active, .navbar-brand {
+    background:#b103fc;
+    color: #fff !important;
+    font-size: 20px;
+    margin-top: -10px;
+    padding: 10px;
+    font-weight: 900;
+}
+.nav-item a .active {
+    color: #fff !important;
+}
+.search {
+    background:#b103fc;
+    margin-top: 40px;
+    padding-bottom: 30px;
+
+}
+.search .input-group {
+    padding-top: 20px;
+    -webkit-box-shadow: 3px 28px 3px 5px rgba(0,0,0,0.48); 
+    box-shadow: 3px 28px 3px 5px rgba(0,0,0,0.48);
+}
+.search .input-group input {
+    height: 50px;
+}
+.btn-outline-secondary {
+    background: #fff;
+    border: none;
+}
+.btn-outline-secondary:active, .btn-outline-secondary:hover, .btn-outline-secondary:focus {
+    background: #fff !important;
+    color: #767676 !important;
+}
+.bi-search {
+    color: #000 !important;
+   
+}
+.moving-words {
+    background: #f3f3f3;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.trend {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    height: 32px;
+    width: 105px;
+    margin-left: 16px;
+    margin-top: 16px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px 0px 0px 3px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+}
+.pause a {
+    height: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 4.5px;
+    color: #000;
+    background: #fff;
+    border-radius: 0px 3px 3px 0px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+}
+.pause {
+    margin-top: 20px;
+    margin-left: 3px;
+}
+section {
+    padding-top: 50px;
+}
+.stick-left {
+    display: flex;
+}
+.text {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    height: 32px;
+    margin-left: 16px;
+    margin-top: 16px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+}
+.text span {
+    font-weight: 200;
+}
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+}
+.move-text:hover {
+    animation-play-state: paused;
+  }
+.move-text {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 16s linear infinite;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.advert {
+    background: #e0d7ff;
+}
+.ad-img {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.ad-img a img {
+    max-width: 100%;
+}
+.word-day {
+    background: #f3f3f3;
+}
+.wordoftheday {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 38px;
+}
+.theword {
+    border: 10px solid #ee2c56;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.word-day .row {
+    display: flex;
+    flex-direction: column;
+}
+.topword p {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ee2c56;
+}
+.subword {
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: -20px;
+}
+.subword span {
+    font-weight: 600;
+}
+.subword span a {
+    color: #000;
+}
+.meaning {
+    font-size: 14px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.meaning span {
+    margin-left: 10px;
+}
+.dict-sub {
+    font-size: 16px;
+    color: #4a4a4a;
+    max-width: 80%;
+}
+.dict .row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.letter-list {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.letter {
+    width: 46px;
+    height: 46px;
+    border: 5px solid #ee2c56;
+    text-align: center;
+    padding-top: 6px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+.letter:hover {
+    background: #ee2c56;
+    color: #fff;
+}
+footer {
+    background: #000;
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+footer .logo {
+    font-size: 20px;
+    font-weight: 800;
+}
+footer .subscribe h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+footer .subscribe .input-group input {
+    height: 48px;
+    border-radius: 0 0 0 0;
+}
+footer .subscribe .input-group button {
+    color: #000;
+    font-weight: 700;
+}
+.social {
+    margin-top: 30px;
+}
+.socialicon {
+    margin-right: 30px;
+    font-size: 20px;
+    color: #fff !important;
+}
+.socialicon a {
+    color: #fff;
+}
+.footer-link {
+    text-align: right;
+}
+.links {
+    margin-top: 10px;
+}
+.links a {
+    color: #fff;
+}
+
+/* Search Page */
+.card-title {
+    font-size: 49px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.vocabu {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+}
+.card-body ol li {
+    font-size: 18px;
+}
+.card-body ol li p {
+    font-size: 16px;
+    font-style: italic;
+    color: #4a4a4a;
+}
+.card {
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bi-search {
+        left: 350px;
+    }
+    .search .input-group {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .marquee {
+        position: relative;
+        width: 60vw;
+        max-width: 100%;
+        height: 50px;
+        overflow-x: hidden;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        color: #000;
+        margin-top: 120px;
+        z-index: -100;
+        background: transparent;
+        font-size: 8px;
+    }
+    section {
+        padding-top: 210px;
+    }
+    .wordlinkk {
+        display: none;
+    }
+    .navbar-brand {
+        margin-left: 50px;
+    }
+    .footer-link {
+        text-align: left;
+        margin-top: 30px;
+    }
+}

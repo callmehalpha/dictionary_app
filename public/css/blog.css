@@ -1,0 +1,160 @@
+
+/* Blog */
+.blog {
+    margin-top: 60px;
+}
+.posttitle h4 {
+    color: #000;
+    font-weight: 800;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.postimg img {
+    position: relative;
+    z-index: -1;
+}
+.postdate {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: -8px 8px 20px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -8px 8px 20px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -8px 8px 20px 0px rgba(0,0,0,0.15);
+    margin-top: -80px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+.datetimeread p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: center;
+}
+.datetimeread p span {
+    margin-left: 50px;
+}
+.post-body p {
+    line-height: 30px;
+    text-align: justify;
+}
+.postdate img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.postdate h5 {
+    font-weight: 900;
+    font-size: 26px;
+}
+.postdate p {
+    margin-top: -10px;
+}
+.share {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.fb, .tw, .what {
+    margin-left: 30px;
+}
+.posttext {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #000;
+}
+.postfooter {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.postauthor p {
+    color: #b103fc;
+    font-weight: 500;
+    font-size: 14px;
+}
+.posttime p {
+    font-size: 14px;
+    margin-right: 15px;
+}
+.otherposts {
+    margin-top: 50px;
+}
+.search1 {
+    padding-right: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+.search2 {
+    visibility: hidden;
+    padding-right: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+.seache input {
+    border-color: solid #6613EC;
+}
+.recentposttitle h5 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.recentposttitle {
+    margin-left: 15px;
+}
+.recentposts-header h4 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+.recentpost {
+    margin-top: 10px;
+    display: flex;
+
+}
+.page-link {
+    color: #000 !important;
+}
+.pagination {
+    margin-top: 50px;
+}
+.recentposts a {
+    color: #000 !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .input-btn {
+        right: 80px;
+        top: 90px;
+    }
+    .form-control {
+        height: 60px;
+    }
+    .navbar-brand {
+        margin-left: -70px;
+    }
+    ul {
+        margin-left: 0px !important;
+    }
+    .nav-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .btn-primary {
+        margin-left: 90px;
+        margin-bottom: 20px;
+    }
+    .quick-links {
+        margin-top: 1px;
+    }
+    .quick-links2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

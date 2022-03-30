@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\WordList;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
+use TCG\Voyager\Models\Post;
+
+class PagesController extends Controller
+{
+    //HomePage
+
+    public function index()
+    {
+        $trends = WordList::inRandomOrder()
+            ->limit(20)
+            ->get();
+        return view('pages.index')->with('trends', $trends);
+    }
+
+    //Search Result
+    public function search(Request $request)
+    {
+        $word = $request->word;
+        $results = WordList::where('word', $word)->get();
+        return view('pages.search')->with('results', $results);
+    }
+
+    //Blog Page
+    public function blog()
+    {
+        $posts = Post::where('status', 'PUBLISHED')->paginate(5);
+        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', Carbon::now()->subDays(2))
+            ->get();
+
+        return view('pages.blog.index')->with('posts', $posts)->with('recent_posts', $recent_posts);
+    }
+
+
+}
