@@ -31,8 +31,8 @@ class WordDimmer extends BaseDimmer
             'title' => "{$count} {$string}",
             'text' => __('voyager::dimmer.page_text', ['count' => $count, 'string' => Str::lower($string)]),
             'button' => [
-                'text' => 'kk',
-                'link' => route('voyager.pages.index'),
+                'text' => 'View word list',
+                'link' => route('voyager.word-lists.index'),
             ],
             'image' => voyager_asset('images/widget-backgrounds/03.jpg'),
         ]));
