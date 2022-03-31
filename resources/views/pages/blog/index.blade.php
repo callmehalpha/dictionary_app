@@ -1,7 +1,7 @@
 @extends('layout.app')
 @push('styles')
-    <link rel="stylesheet" href="css/blog.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="{{asset('css/blog.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style1.css')}}">
 @endpush
 @section('content')
     <section class="main">

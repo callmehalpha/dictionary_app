@@ -3,7 +3,7 @@
     @include('inc._search-box')
 @endsection
 @push('styles')
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 @endpush
 @section('content')
     <section class="main">

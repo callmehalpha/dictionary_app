@@ -37,5 +37,15 @@ class PagesController extends Controller
         return view('pages.blog.index')->with('posts', $posts)->with('recent_posts', $recent_posts);
     }
 
+    public function view_blog($slug)
+    {
+        $posts = Post::where('slug', $slug)->get();
+        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', Carbon::now()->subDays(2))
+            ->get();
+
+        return view('pages.blog.view')->with('posts', $posts)->with('recent_posts', $recent_posts);
+
+    }
+
 
 }
