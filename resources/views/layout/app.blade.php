@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dictionary</title>
+    <title>{{config('app.name')}}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -54,25 +54,28 @@
                             </button>
                         </div>
                     </div>
+                    <div class="links"><a href="#">© @php echo date('Y') @endphp {{config('app_url')}}</a></div>
 
                 </div>
-                <div class="social d-flex">
-                    <div class="socialicon"><a href="#"><i class="bi bi-facebook"></i></a></div>
-                    <div class="socialicon"><a href="#"><i class="bi bi-twitter"></i></a></div>
-                    <div class="socialicon"><a href="#"><i class="bi bi-instagram"></i></a></div>
-                    <div class="socialicon"><a href="#"><i class="bi bi-youtube"></i></a></div>
-                    <div class="socialicon"><a href="#"><i class="bi bi-pinterest"></i></a></div>
-                </div>
+                {{-- <div class="social d-flex">
+                     <div class="socialicon"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                     <div class="socialicon"><a href="#"><i class="bi bi-twitter"></i></a></div>
+                     <div class="socialicon"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                     <div class="socialicon"><a href="#"><i class="bi bi-youtube"></i></a></div>
+                     <div class="socialicon"><a href="#"><i class="bi bi-pinterest"></i></a></div>
+                 </div>--}}
             </div>
             <div class="col-md-5"></div>
             <div class="col-md-3">
-                <div class="footer-link">
-                    <div class="links"><a href="#">About</a></div>
-                    <div class="links"><a href="#">Careers</a></div>
-                    <div class="links"><a href="#">Contact us</a></div>
-                    <div class="links"><a href="#">Cookies, Terms, & Privacy</a></div>
-                    <div class="links"><a href="#">© @php echo date('Y') @endphp {{config('app_url')}}</a></div>
-                </div>
+                {{--
+                                <div class="footer-link">
+                                    <div class="links"><a href="#">About</a></div>
+                                    <div class="links"><a href="#">Careers</a></div>
+                                    <div class="links"><a href="#">Contact us</a></div>
+                                    <div class="links"><a href="#">Cookies, Terms, & Privacy</a></div>
+                                    <div class="links"><a href="#">© @php echo date('Y') @endphp {{config('app_url')}}</a></div>
+                                </div>
+                --}}
             </div>
         </div>
     </div>
