@@ -23,7 +23,9 @@
                                     @foreach($results as $result)
                                         <li>
                                             {{$result->word}}
-                                            <p>{{$result->meaning}}</p>
+                                            @foreach($result->meaning as $res)
+                                                <p>{{$res}}</p>
+                                            @endforeach
                                         </li>
                                     @endforeach
                                 @else

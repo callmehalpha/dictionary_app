@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -20,9 +21,10 @@ class AddExistingLibraryToDB extends Seeder
 
             $new_record = [
                 'word' => $key,
-                'meaning' => $item[0]
+                'meaning' => json_encode($item),
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
             ];
-
             DB::table('word_lists')->insert($new_record);
 
 

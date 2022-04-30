@@ -25,17 +25,14 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-
-/*Route::get('/test', function () {
+Route::get('/test', function () {
     $words = json_decode(file_get_contents(public_path() . "/data.json"), true);
     foreach ($words as $key => $item) {
 
-        $new_record = [
+        return [
             'word' => $key,
-            'meaning' => $item[0]
+            'meaning' => $item
         ];
 
-        return $new_record;
-
     }
-});*/
+});

@@ -10,4 +10,8 @@ class WordList extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    protected $casts = [
+        'meaning' => 'array'
+    ];
 }
