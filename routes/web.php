@@ -25,7 +25,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::get('/test', function () {
+/*Route::get('/test', function () {
     $words = json_decode(file_get_contents(public_path() . "/data.json"), true);
     foreach ($words as $key => $item) {
 
@@ -35,4 +35,4 @@ Route::get('/test', function () {
         ];
 
     }
-});
+});*/
