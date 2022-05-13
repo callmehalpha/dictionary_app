@@ -91,85 +91,83 @@
                         </div>
                     </div>
                     <div class="letter-list d-flex">
-                        <a href="#">
-                            <div class="letter">#</div>
-                        </a>
-                        <a href="#">
+
+                        <a href="{{route('list_of_words','a')}}">
                             <div class="letter">Aa</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','b')}}">
                             <div class="letter">Bb</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','c')}}">
                             <div class="letter">Cc</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','d')}}">
                             <div class="letter">Dd</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','e')}}">
                             <div class="letter">Ee</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','f')}}">
                             <div class="letter">Ff</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','g')}}">
                             <div class="letter">Gg</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','h')}}">
                             <div class="letter">Hh</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','i')}}">
                             <div class="letter">Ii</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','j')}}">
                             <div class="letter">Jj</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','k')}}">
                             <div class="letter">Kk</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','l')}}">
                             <div class="letter">Ll</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','m')}}">
                             <div class="letter">Mm</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','n')}}">
                             <div class="letter">Nn</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','o')}}">
                             <div class="letter">Oo</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','p')}}">
                             <div class="letter">Pp</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','q')}}">
                             <div class="letter">Qq</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','r')}}">
                             <div class="letter">Rr</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','s')}}">
                             <div class="letter">Ss</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','t')}}">
                             <div class="letter">Tt</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','u')}}">
                             <div class="letter">Uu</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','v')}}">
                             <div class="letter">Vv</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','w')}}">
                             <div class="letter">Ww</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','x')}}">
                             <div class="letter">Xx</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','y')}}">
                             <div class="letter">Yy</div>
                         </a>
-                        <a href="#">
+                        <a href="{{route('list_of_words','z')}}">
                             <div class="letter">Zz</div>
                         </a>
 

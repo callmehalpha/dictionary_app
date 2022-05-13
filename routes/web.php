@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [PagesController::class, 'view_blog'])->name('view');
+Route::get('/letter/{letter}', [PagesController::class, 'list_of_words'])->name('list_of_words');
 Route::post('/meaning', [PagesController::class, 'search'])->name('search');
 
 
