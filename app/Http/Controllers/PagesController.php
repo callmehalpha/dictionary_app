@@ -50,7 +50,7 @@ class PagesController extends Controller
     public function list_of_words()
     {
         $letter = \request('letter');
-        $results = WordList::where('word', 'like', '%' . $letter . '%')->paginate(50);
+        $results = WordList::where('word', 'like', $letter . '%')->simplePaginate(50);
         return view('pages.list')->with('letter', $letter)->with('results', $results);
     }
 
