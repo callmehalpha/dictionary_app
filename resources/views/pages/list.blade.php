@@ -28,7 +28,7 @@
                                             @endforeach
                                         </li>
                                     @endforeach
-                                    {{$results->links('pagination::bootstrap-4')}}
+                                    {{$results->links()}}
                                 @else
                                     <li>
                                         No words with letter
