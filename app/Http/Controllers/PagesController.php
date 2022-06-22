@@ -31,7 +31,7 @@ class PagesController extends Controller
     public function blog()
     {
         $posts = Post::where('status', 'PUBLISHED')->paginate(5);
-        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', Carbon::now()->subDays(2))
+        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', '<', Carbon::now()->subDay())
             ->get();
 
         return view('pages.blog.index')->with('posts', $posts)->with('recent_posts', $recent_posts);
@@ -40,7 +40,7 @@ class PagesController extends Controller
     public function view_blog($slug)
     {
         $posts = Post::where('slug', $slug)->get();
-        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', Carbon::now()->subDays(2))
+        $recent_posts = Post::where('status', 'PUBLISHED')->whereDate('created_at', '<', Carbon::now()->subDay())
             ->get();
 
         return view('pages.blog.view')->with('posts', $posts)->with('recent_posts', $recent_posts);
