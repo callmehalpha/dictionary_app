@@ -16,7 +16,8 @@ class PagesController extends Controller
         $trends = WordList::inRandomOrder()
             ->limit(20)
             ->get();
-        return view('pages.index')->with('trends', $trends);
+        $featured_posts = Post::where('featured', true)->limit(4)->get();
+        return view('pages.index')->with('trends', $trends)->with('featured_post', $featured_posts);
     }
 
     //Search Result

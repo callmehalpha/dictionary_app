@@ -19,7 +19,8 @@
                         @foreach($posts as $post)
                             <div class="blogpost">
                                 <div class="postimg">
-                                    <img src="{{Voyager::image($post->image)}}" width="70v0" height="342" alt="">
+                                    <img class="img-fluid"
+                                         src="{{Voyager::image($post->image)}}" alt="">
                                 </div>
                             </div>
                             <div class="post-body">

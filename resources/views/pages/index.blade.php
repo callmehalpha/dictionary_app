@@ -36,18 +36,20 @@
         <div class="advert">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="ad-img"><a href="#"><img src="img/dicimg.png" alt=""></a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="ad-img"><a href="#"><img src="img/dicimg.png" alt=""></a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="ad-img"><a href="#"><img src="img/dicimg.png" alt=""></a></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="ad-img"><a href="#"><img src="img/dicimg.png" alt=""></a></div>
-                    </div>
+                    @if(count($featured_post) > 0)
+                        @foreach($featured_post as $post)
+                            <div class="col-md-6">
+                                <div class="ad-img"><a href="/blog/{{$post->slug}}"><img
+                                            src="{{Voyager::image($post->image)}}" alt="{!! $post->title !!}"></a>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <div class="col-md-6 info">
+                            <marquee class="text-center">No featured posts</marquee>
+                        </div>
+                    @endif
+
                 </div>
             </div>
         </div>
