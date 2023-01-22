@@ -23,6 +23,10 @@
                                     @foreach($results as $result)
                                         <li>
                                             {{$result->word}}
+                                            @section('meta')
+                                                {{$result->word}}
+                                            @endsection
+
                                             @foreach($result->meaning as $res)
                                                 <p>{{$res}}</p>
                                             @endforeach

@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dictionaryapp">
+    <meta name="description"
+          content="A dictionary web application allows users to look up the definition of words. It typically includes a search bar where users can enter a word and receive the definition, pronunciation, and possibly related words or phrases. The application may also include features such as the ability to save words to a favorites list or view a history of recently searched words. Additionally, it may offer different languages or a thesaurus functionality. Overall, the main goal is to provide users with a quick and easy way to access dictionary information online.">
+    <meta name="keywords"
+          content="dictionary, dictionary app, diction, words, phrase, find the meaning," @yield('meta')>
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Find meaning to your words | {{config('app.name')}}"/>
+    <meta property="og:description"
+          content="A dictionary web application allows users to look up the definition of words. It typically includes a search bar where users can enter a word and receive the definition, pronunciation, and possibly related words or phrases. The application may also include features such as the ability to save words to a favorites list or view a history of recently searched words. Additionally, it may offer different languages or a thesaurus functionality. Overall, the main goal is to provide users with a quick and easy way to access dictionary information online."/>
+    <meta property="og:url" content="{{config('app_url')}}"/>
+    <meta property="og:site_name"
+          content="{{config('app.name')}}: A dictionary web application allows users to look up the definition of words. It typically includes a search bar where users can enter a word and receive the definition, pronunciation, and possibly related words or phrases. The application may also include features such as the ability to save words to a favorites list or view a history of recently searched words. Additionally, it may offer different languages or a thesaurus functionality. Overall, the main goal is to provide users with a quick and easy way to access dictionary information online."/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="Init Zero">
     <title>{{config('app.name')}}</title>
+    @stack('meta')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     @stack('styles')
+
 </head>
 <body>
 <div class="header">
