@@ -5,6 +5,9 @@
 @push('styles')
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 @endpush
+@section('title')
+    List of words on letter "{{$letter}}"
+@endsection
 @section('content')
     <section class="main">
         <div class="search-result">

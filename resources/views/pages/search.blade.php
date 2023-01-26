@@ -27,6 +27,10 @@
                                                 {{$result->word}}
                                             @endsection
 
+                                            @section('title')
+                                                List of meaning to {{$result->word}}
+                                            @endsection
+
                                             @foreach($result->meaning as $res)
                                                 <p>{{$res}}</p>
                                             @endforeach

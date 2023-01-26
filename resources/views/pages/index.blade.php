@@ -5,6 +5,9 @@
 @push('styles')
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 @endpush
+@section('title')
+    Find meaning to your word
+@endsection
 @section('content')
     <section class="main">
         <div class="moving-words">

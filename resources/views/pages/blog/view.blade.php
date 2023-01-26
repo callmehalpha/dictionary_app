@@ -17,15 +17,18 @@
                             </form>
                         </div>
                         @foreach($posts as $post)
-                            <div class="blogpost">
-                                <div class="postimg">
-                                    <img class="img-fluid"
-                                         src="{{Voyager::image($post->image)}}" alt="">
-                                </div>
+                        @section('title')
+                            {{$post->title}}
+                        @endsection
+                        <div class="blogpost">
+                            <div class="postimg">
+                                <img class="img-fluid"
+                                     src="{{Voyager::image($post->image)}}" alt="">
                             </div>
-                            <div class="post-body">
-                                {!! $post->body !!}
-                            </div>
+                        </div>
+                        <div class="post-body">
+                            {!! $post->body !!}
+                        </div>
                         @endforeach
                         <div class="share">
                             <div>

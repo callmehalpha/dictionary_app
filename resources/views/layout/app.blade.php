@@ -23,7 +23,7 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="2 days">
     <meta name="author" content="Init Zero">
-    <title>{{config('app.name')}}</title>
+    <title>@yield('title')|{{config('app.name')}}</title>
     @stack('meta')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">

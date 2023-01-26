@@ -3,6 +3,9 @@
     <link rel="stylesheet" href="{{asset('css/blog.css')}}">
     <link rel="stylesheet" href="{{asset('css/style1.css')}}">
 @endpush
+@section('title')
+    Blog
+@endsection
 @section('content')
     <section class="main">
         <section class="blog">
