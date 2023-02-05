@@ -7,6 +7,8 @@
     <meta name="title" content="Dictionaryapp">
     <meta name="description"
           content="A dictionary web application allows users to look up the definition of words. It typically includes a search bar where users can enter a word and receive the definition, pronunciation, and possibly related words or phrases. The application may also include features such as the ability to save words to a favorites list or view a history of recently searched words. Additionally, it may offer different languages or a thesaurus functionality. Overall, the main goal is to provide users with a quick and easy way to access dictionary information online.">
+    <meta name="description"
+          content="@yield('post_desc')">
     <meta name="keywords"
           content="dictionary, dictionary app, diction, words, phrase, find the meaning," @yield('meta')>
     <meta name="robots" content="index, follow">

@@ -29,6 +29,12 @@
                         <div class="post-body">
                             {!! $post->body !!}
                         </div>
+                        @section('meta')
+                            {{$post->meta_keywords}}
+                        @endsection
+                        @section('post_desc')
+                            {{$post->meta_description}}
+                        @endsection
                         @endforeach
                         <div class="share">
                             <div>
