@@ -10,7 +10,7 @@
     <meta name="description"
           content="@yield('post_desc')">
     <meta name="keywords"
-          content="dictionary, dictionary app, diction, words, phrase, find the meaning," @yield('meta')>
+          content="dictionary, dictionary app, diction, words, phrase, find the meaning,@yield('meta')">
     <meta name="robots" content="index, follow">
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
