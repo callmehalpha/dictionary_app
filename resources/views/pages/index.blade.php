@@ -22,12 +22,11 @@
                             <div class="move-text d-flex">
                                 @if(count($trends) > 0)
                                     @foreach($trends as $trend)
-                                        <form action="{{route('search')}}" method="post">
-                                            @csrf
-                                            <input type="hidden" value="{{$trend->word}}" name="word"/>
-                                            <button type="submit" class="text">{{$trend->word}}
+
+                                        <a href="{{route('search',$trend->word)}}">
+                                            <button class="text">{{$trend->word}}
                                                 <span>{{rand(0,99)}}%</span></button>
-                                        </form>
+                                        </a>
                                     @endforeach
                                 @endif
                             </div>
